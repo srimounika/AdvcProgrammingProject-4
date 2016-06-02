@@ -1,0 +1,23 @@
+Sri Mounika Puvvada
+Advanced Programming Language
+gcdExec.txt file
+project 4
+OPcode for GCDExec
+  static int[] gcd2={
+      EXEC,0,
+      PRINT,
+      HALT
+   };
+~
+4
+20
+0
+14
+18
+1
+main
+0
+0
+0
+1
+c:\\test\\spuv-p4\\gcd.exe 1983 1530

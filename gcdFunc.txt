@@ -1,0 +1,121 @@
+Sri Mounika Puvvada
+Advanced Programming Language
+gcdFunc.txt file
+project-p4
+OPcode for GCD
+
+   static int GCD_INDEX = 1;
+	static int GCD_ADDRESS = 7;
+	static int MAIN_ADDRESS = 0;
+
+   static int[] gcd={
+      //main() a=20, b=3
+      ICONST,1983,     //0
+      ICONST,1530,      //2
+      //call gcd(20,3)
+      CALL,GCD_INDEX,//4
+      HALT,          //6
+      LOAD,0,        //7
+      LOAD,1,        //9
+      ILT,           //11
+      BRF,24,        //12
+      LOAD,0,        //14
+      LOAD,1,        //16
+      STORE,0,       //18
+      STORE,1,       //20
+      BR,32,         //22
+      LOAD,0,        //24
+      LOAD,1,        //26
+      STORE,1,       //28
+      STORE,0,       //30
+      LOAD,1,        //32
+      ICONST,0,      //34
+      IEQ,           //36
+      BRT,52,        //37
+      LOAD,0,        //39 
+      LOAD,1,        //41  
+      MOD,           //43  
+      LOAD,1,        //44  
+      STORE,1,       //46  
+      STORE,0,       //48
+      BR,7,          //50
+      LOAD,0,        //52
+      PRINT,         //54
+      RET            //55
+   };
+   
+   static FuncMetaData[] gcd_metadata = {
+      new FuncMetaData("main",0,2,MAIN_ADDRESS),
+      new FuncMetaData("gcd",2,1,GCD_ADDRESS)
+   };
+
+
+
+~
+56
+9
+1983
+9
+1530
+16
+1
+18
+10
+0
+10
+1
+4
+8
+24
+10
+0
+10
+1
+12
+0
+12
+1
+6
+32
+10
+0
+10
+1
+12
+1
+12
+0
+10
+1
+9
+0
+5
+7
+52
+10
+0
+10
+1
+19
+10
+1
+12
+1
+12
+0
+6
+7
+10
+0
+14
+17
+2
+main
+0
+0
+0
+gcd
+2
+0
+7
+0
